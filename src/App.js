@@ -26,7 +26,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <a href="https://www.fontspace.com/category/star-wars"><img src="https://see.fontimg.com/api/renderfont4/y0xm/eyJyIjoiZnMiLCJoIjo2NSwidyI6MTAwMCwiZnMiOjY1LCJmZ2MiOiIjRUFEQTJCIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/UkVBQ1QgV0FSUw/star-jedi-outline.png" alt="React Wars"/></a>
+      <img src="https://see.fontimg.com/api/renderfont4/y0xm/eyJyIjoiZnMiLCJoIjo2NSwidyI6MTAwMCwiZnMiOjY1LCJmZ2MiOiIjRUFEQTJCIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/UkVBQ1QgV0FSUw/star-jedi-outline.png" alt="React Wars"/>
       <Character character={charData} />
     </div>
   );
