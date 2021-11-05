@@ -1,10 +1,8 @@
 .App {
   text-align: center;
 }
-.Header {
-  color: #EEDB00;
-  text-shadow: 1px 1px 5px #fff;
-  font-size: 5rem;
-  font-family: 'Pathway Gothic One', sans-serif;
+a img {
+margin: 3em;
+opacity: 75%;
 }
 /* write your parent styles in here for your App.js */

@@ -1,49 +1,50 @@
 import React from "react";
-import styled from 'styled-components'
+import styled from "styled-components";
 
+const StyledCard = styled.div`
+  border: 3px solid #14213d;
+  box-shadow: 1px 1px 5px red;
+  background: rgba(19, 32, 24, 0.7);
+  border-radius: 1%;
+  margin: 0 20% 10% 20%;
+  padding: 3%;
+  display: flex;
+  justify-content: center;
+`;
 
-const StyledChar = styled.div`
-border: 3px solid #14213d;
-background: rgba(19, 32, 24, 0.7);
-border-radius: 1%;
-margin: auto 20%;
-padding: 3%;
-display: flex;
-justify-content: center;
-`
-
-const StyledPer = styled.div`
-color: #ffffff;
-border: 5px dotted #14213d;
-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-margin-bottom: 10%;
-padding: 5% 10%;
-font-size: 3em;
-`
-const StyledYear = styled.h2`
-color:white;
-font-size: 1.5rem;
-`
+const StyledPer = styled.h1`
+  color: #ffffff;
+  border: 3px solid #14213d;
+  box-shadow: 2px 2px 5px red;
+  margin-bottom: 10%;
+  padding: 5% 10%;
+  font-size: 3em;
+`;
+const StyledYear = styled.p`
+  color: white;
+  font-size: 1.5rem;
+`;
 
 const Character = (props) => {
-    const {character} = props;
-    
-    return (
-    <StyledChar>
-        <div> 
+  const { character } = props;
+
+  return (
+    <StyledCard>
+      <div>
         {character.map((res) => {
-            return (
-                <div>
-                <StyledPer>
-                {res.name}<br />
-                <StyledYear>Birth Year: {res.birth_year}</StyledYear>                
-                </StyledPer>
-                </div>
-            )
+          return (
+            <div>
+              <StyledPer>
+                {res.name}
+                <br />
+                <StyledYear>Birth Year: {res.birth_year}</StyledYear>
+              </StyledPer>
+            </div>
+          );
         })}
-        </div>
-    </StyledChar>
-  )
-}
+      </div>
+    </StyledCard>
+  );
+};
 
 export default Character;
